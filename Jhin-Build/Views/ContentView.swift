@@ -18,8 +18,6 @@ struct ContentView: View {
                         BuildDetail(buildCombo: combo)
                     }
                 }
-                
-                
                 Button(action: {
                     //convert to string and add to fav list page
                 }){

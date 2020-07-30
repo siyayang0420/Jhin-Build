@@ -21,6 +21,11 @@
 		8183D01B24D104E80063BE2E /* BuildDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8183D01A24D104E80063BE2E /* BuildDetail.swift */; };
 		8183D01C24D1078D0063BE2E /* buildData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8183D01024D0EE890063BE2E /* buildData.json */; };
 		8183D01F24D10C3F0063BE2E /* FavouriteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8183D01E24D10C3F0063BE2E /* FavouriteList.swift */; };
+		81A04CD624D283A600E21B35 /* TestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A04CD524D283A600E21B35 /* TestFile.swift */; };
+		81A04CD824D286B300E21B35 /* BuildRowCo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A04CD724D286B300E21B35 /* BuildRowCo.swift */; };
+		81A04CDA24D28E6900E21B35 /* BuildListCo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A04CD924D28E6900E21B35 /* BuildListCo.swift */; };
+		81A04CDC24D2929100E21B35 /* BuildDetailCo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A04CDB24D2929100E21B35 /* BuildDetailCo.swift */; };
+		81A04CDE24D292D900E21B35 /* ContentViewCo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A04CDD24D292D900E21B35 /* ContentViewCo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +44,11 @@
 		8183D01624D0F6210063BE2E /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		8183D01A24D104E80063BE2E /* BuildDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildDetail.swift; sourceTree = "<group>"; };
 		8183D01E24D10C3F0063BE2E /* FavouriteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteList.swift; sourceTree = "<group>"; };
+		81A04CD524D283A600E21B35 /* TestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFile.swift; sourceTree = "<group>"; };
+		81A04CD724D286B300E21B35 /* BuildRowCo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildRowCo.swift; sourceTree = "<group>"; };
+		81A04CD924D28E6900E21B35 /* BuildListCo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildListCo.swift; sourceTree = "<group>"; };
+		81A04CDB24D2929100E21B35 /* BuildDetailCo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildDetailCo.swift; sourceTree = "<group>"; };
+		81A04CDD24D292D900E21B35 /* ContentViewCo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewCo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +131,15 @@
 			isa = PBXGroup;
 			children = (
 				8183CFFB24D0EAD60063BE2E /* ContentView.swift */,
-				8183D01E24D10C3F0063BE2E /* FavouriteList.swift */,
 				8183D01A24D104E80063BE2E /* BuildDetail.swift */,
 				8183D00D24D0EC030063BE2E /* BuildList.swift */,
 				8183D00B24D0EBD00063BE2E /* BuildRow.swift */,
+				81A04CDD24D292D900E21B35 /* ContentViewCo.swift */,
+				81A04CDB24D2929100E21B35 /* BuildDetailCo.swift */,
+				81A04CD924D28E6900E21B35 /* BuildListCo.swift */,
+				81A04CD724D286B300E21B35 /* BuildRowCo.swift */,
+				8183D01E24D10C3F0063BE2E /* FavouriteList.swift */,
+				81A04CD524D283A600E21B35 /* TestFile.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,12 +218,17 @@
 			files = (
 				8183D01124D0EE890063BE2E /* buildData.json in Sources */,
 				8183D00C24D0EBD00063BE2E /* BuildRow.swift in Sources */,
+				81A04CD624D283A600E21B35 /* TestFile.swift in Sources */,
+				81A04CDC24D2929100E21B35 /* BuildDetailCo.swift in Sources */,
+				81A04CDA24D28E6900E21B35 /* BuildListCo.swift in Sources */,
 				8183CFF824D0EAD60063BE2E /* AppDelegate.swift in Sources */,
 				8183D00E24D0EC030063BE2E /* BuildList.swift in Sources */,
 				8183CFFA24D0EAD60063BE2E /* SceneDelegate.swift in Sources */,
 				8183D01424D0EEFE0063BE2E /* Build.swift in Sources */,
 				8183CFFC24D0EAD60063BE2E /* ContentView.swift in Sources */,
 				8183D01F24D10C3F0063BE2E /* FavouriteList.swift in Sources */,
+				81A04CDE24D292D900E21B35 /* ContentViewCo.swift in Sources */,
+				81A04CD824D286B300E21B35 /* BuildRowCo.swift in Sources */,
 				8183D01B24D104E80063BE2E /* BuildDetail.swift in Sources */,
 				8183D01724D0F6210063BE2E /* Helper.swift in Sources */,
 			);

@@ -7,28 +7,25 @@
 //
 
 import SwiftUI
-
 struct BuildList: View {
-    @State var selected = ""
+    @State var selectedString = ["" : ""]
     var buildCombo : BuildCombo
     var body: some View {
         VStack(alignment:.leading){
             //Select Build Combo
             ForEach(
-                buildCombo.buildOptions
+                self.buildCombo.buildOptions
             ){ buildOp in
-                BuildRow(
-                    selected: self.$selected,
-                    buildOption: buildOp
-                )
+                BuildRow(selectedStrings: self.$selectedString, buildOption: buildOp)
             }
-            
         }
     }
+    
+
 }
 
-//struct BuildList_Previews: PreviewProvider {
-//    static var previews: some View {
-//        BuildList( buildCombo: BuildCombo.init(buildOptions: [BuildOption.init(title: "ds", steps: "steps", items: ["sds","dsds"])]))
-//    }
-//}
+struct BuildList_Previews: PreviewProvider {
+    static var previews: some View {
+        BuildList(buildCombo: BuildCombo.init(buildOptions: [BuildOption.init(steps: "Step 1", title: "Hi", items: ["String","uuuu"]),BuildOption.init(steps: "Step 1", title: "33", items: ["Sgfhkdsfs","sfewe"])]))
+    }
+}

@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct BuildRow: View {
-    @Binding var selected : String
+    @Binding var selectedStrings : [String : String]
     var buildOption : BuildOption
     var body: some View {
         VStack(alignment: .center){
@@ -31,7 +31,7 @@ struct BuildRow: View {
                 //Item List
                 ForEach(buildOption.items, id: \.self){buildItem in
                     Button(action: {
-                        self.selected = buildItem
+                        self.selectedStrings[self.buildOption.steps] = buildItem
                     }){
                         VStack{
                             HStack{
@@ -43,12 +43,17 @@ struct BuildRow: View {
                                 Spacer()
                                 
                                 //Radio buttons
-                                ZStack{
-                                    Circle().fill(self.selected == buildItem ? Color.black : Color.black.opacity(0.2))
-                                        .frame(width: 15, height: 15)
-                                    
-                                    if self.selected == buildItem {
+                                
+                                if self.selectedStrings[self.buildOption.steps] == buildItem {
+                                    ZStack{
+                                        Circle().fill(Color.black).frame(width: 15, height: 15)
                                         Circle().stroke(Color.black, lineWidth:2).frame(width: 20, height: 20)
+                                    }
+                                    
+                                } else {
+                                    ZStack{
+                                        Circle().fill(Color.black.opacity(0.2)).frame(width: 15, height: 15)
+                                        Circle().stroke(Color.black.opacity(0), lineWidth:2).frame(width: 20, height: 20)
                                     }
                                 }
                             }.foregroundColor(.black)
@@ -59,14 +64,8 @@ struct BuildRow: View {
                                 .foregroundColor(.gray)
                                 .opacity(0.2)
                         }
-                        
-                        
-                        
                     }.padding(.top)
-                    
                 }
-                
-                
             }
             .padding(.vertical)
             .padding(.horizontal,25)
@@ -78,7 +77,7 @@ struct BuildRow: View {
 
 //struct BuildRow_Previews: PreviewProvider {
 //    static var previews: some View {
-//        BuildRow(selected: Binding.constant("fss"), buildOption: BuildOption.init(steps: "step1", title: "dsda", items: ["fss","dfs"]))
+//        BuildRow(selected: Binding.constant("fss"), selectedStrings: <#Binding<[String : String]>#>, buildOption: BuildOption.init(steps: "step1", title: "dsda", items: ["fss","dfs","gju"]))
 //    }
 //}
 
